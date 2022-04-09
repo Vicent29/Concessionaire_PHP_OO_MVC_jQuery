@@ -101,20 +101,6 @@ function clicks() {
         var id_car = this.getAttribute('id');
         loadDetails(id_car);
     });
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6dfd6f4 (Update functiion cars related)
-    $(document).on("click", ".car_related__content", function() {
-        var id_car = this.getAttribute('id');
-        loadDetails(id_car);
-    });
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d024177 (Update cars related shop)
->>>>>>> 6dfd6f4 (Update functiion cars related)
     $(document).on("click", ".list__heart", function() {
         var id_car = this.getAttribute('id');
         click_like(id_car, "list_all");
@@ -191,14 +177,6 @@ function loadDetails(id_car) {
 
 
         $('.date_img').slick({
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d024177 (Update cars related shop)
->>>>>>> 6dfd6f4 (Update functiion cars related)
             infinite: true,
             speed: 300,
             slidesToShow: 1,
@@ -636,25 +614,6 @@ function cars_related(loadeds = 0, type_car, total_items) {
                         '<h2 class="cat">Cars related</h2>'
                     )
                 for (row in data) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6dfd6f4 (Update functiion cars related)
-                    $('<div></div>').attr({ 'id': data[row].id_car, 'class': 'car_related__content' }).appendTo('.title_content')
-                        .html(
-                            "<li class='portfolio-item'>" +
-                            "<div class='item-main'>" +
-                            "<div class='portfolio-image'>" +
-                            "<img src = " + data[row].img_car + " alt='imagen car' </img> " +
-                            "</div>" +
-                            "<h5>" + data[row].id_brand + "  " + data[row].name_model + "</h5>" +
-                            "</div>" +
-                            "</li>"
-
-                        )
-<<<<<<< HEAD
-=======
-=======
                     if (data[row].id_car != undefined) {
                         $('<div></div>').attr({ 'id': data[row].id_car, 'class': 'more_info_list' }).appendTo('.title_content')
                             .html(
@@ -669,8 +628,6 @@ function cars_related(loadeds = 0, type_car, total_items) {
 
                             )
                     }
->>>>>>> d024177 (Update cars related shop)
->>>>>>> 6dfd6f4 (Update functiion cars related)
                 }
                 $('<div></div>').attr({ 'id': 'more_car__button', 'class': 'more_car__button' }).appendTo('.title_content')
                     .html(
@@ -679,29 +636,6 @@ function cars_related(loadeds = 0, type_car, total_items) {
             }
             if (loaded >= 3) {
                 for (row in data) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6dfd6f4 (Update functiion cars related)
-                    console.log(data);
-                    $('<div></div>').attr({ 'id': data[row].id_car, 'class': 'car_related__content' }).appendTo('.title_content')
-                        .html(
-                            "<li class='portfolio-item'>" +
-                            "<div class='item-main'>" +
-                            "<div class='portfolio-image'>" +
-                            "<img src = " + data[row].img_car + " alt='imagen car' </img> " +
-                            "</div>" +
-                            "<h5>" + data[row].id_brand + "  " + data[row].name_model + "</h5>" +
-                            "</div>" +
-                            "</li>"
-
-                        )
-                }
-                var total_cars = total_item - 3;
-                if (total_cars <= loaded) {
-<<<<<<< HEAD
-=======
-=======
                     if (data[row].id_car != undefined) {
                         console.log(data);
                         $('<div></div>').attr({ 'id': data[row].id_car, 'class': 'more_info_list' }).appendTo('.title_content')
@@ -721,20 +655,12 @@ function cars_related(loadeds = 0, type_car, total_items) {
                 var total_cars = total_item - 3;
                 if (total_cars <= loaded) {
                     $('.more_car__button').empty();
->>>>>>> d024177 (Update cars related shop)
->>>>>>> 6dfd6f4 (Update functiion cars related)
                     $('<div></div>').attr({ 'id': 'more_car__button', 'class': 'more_car__button' }).appendTo('.title_content')
                         .html(
                             "</br><button class='btn-notexist' id='btn-notexist'></button>"
                         )
                 } else {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
                     $('.more_car__button').empty();
->>>>>>> d024177 (Update cars related shop)
->>>>>>> 6dfd6f4 (Update functiion cars related)
                     $('<div></div>').attr({ 'id': 'more_car__button', 'class': 'more_car__button' }).appendTo('.title_content')
                         .html(
                             '<button class="load_more_button" id="load_more_button">LOAD MORE</button>'
