@@ -1,0 +1,39 @@
+<body>
+    <html>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="div-menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="div-logo">
+                    <a class="navbar-brand" href="index.php?module=ctrl_home&op=list"><img src="views\img\logo1.png" alt="LOGO"></a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="menu">
+                    <li>
+                        <a href="index.php?module=ctrl_home&op=list" data-tr="INICIO"></a>
+                    </li>
+                    <li class="opc_CRUD">
+                        <a href="index.php?module=ctrl_car&op=list" data-tr="CRUD"></a>
+                    </li>
+                    <li class="opc_exceptions">
+                        <a href="index.php?module=ctrl_exceptions&op=list_exceptions" data-tr="EXCEPCIONES"></a>
+                    </li>
+                    <li id="opc_shop">
+                        <a href="index.php?module=ctrl_shop&op=list" data-tr="TIENDA"></a>&nbsp;&nbsp;
+                    </li>
+
+                    <li><button class="lang-btn" id="btn-val"></buttton></li>        
+                    <li><button class = "lang-btn" id = "btn-es"></buttton></li>
+                    <li><button class = "lang-btn" id = "btn-en"></buttton></li>  
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
